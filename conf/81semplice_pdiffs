@@ -1,0 +1,2 @@
+// Disable pdiffs.
+Acquire::PDiffs "0";

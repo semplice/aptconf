@@ -1,0 +1,16 @@
+// apt default settings for semplice
+
+// disable recommends & suggests
+APT::Install-Recommends "0";
+APT::Install-Suggests "0";
+
+// disable autoremove, does not work well when removing metapackages
+// (semplice-meta packages can be removed via remove_meta.sh)
+APT::Get::AutomaticRemove "0";
+APT::Get::HideAutoRemove "1";
+
+// Execute triggers only once
+DPkg::NoTriggers "1";
+DPkg::ConfigurePending "1";
+DPkg::TriggersPending "1";
+PackageManager::Configure "smart";

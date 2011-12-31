@@ -1,0 +1,29 @@
+Source: semplice-apt-conf
+Section: admin
+Priority: optional
+Maintainer: Eugenio Paolantonio (g7) <me@medesimo.eu>
+Build-Depends: debhelper (>= 7.9.3)
+Standards-Version: 3.9.2
+Vcs-Bzr: lp:~semplice-devs/semplice/semplice-apt-conf
+Vcs-Browser: http://code.launchpad.net/~semplice-devs/semplice/semplice-apt-conf
+
+Package: semplice-apt-conf
+Architecture: all
+Depends: ${misc:Depends}
+Description: APT default settings for semplice
+ This package tweaks the APT configuration in
+ order to:
+ - Disable autoremove
+ - Disable recommends/suggests automatic
+   installation
+ - Execute triggers only once
+
+Package: semplice-apt-conf-nopdiffs
+Architecture: all
+Depends: ${misc:Depends}
+Description: APT default settings for semplice - no PDiffs
+ This package disables PDiffs in apt-get update.
+ PDiffs are known to save bandwidth but the update
+ process can be longer in low-powered machines.
+ .
+ This package doesn't require semplice-apt-conf.
