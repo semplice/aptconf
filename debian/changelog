@@ -1,3 +1,9 @@
+semplice-apt-conf (0.2) unstable; urgency=low
+
+  * Initial upload for current.
+
+ -- Eugenio Paolantonio (g7) <me@medesimo.eu>  Sat, 16 Feb 2013 15:19:31 +0100
+
 semplice-apt-conf (0.1) pulse; urgency=low
 
   * Initial release
